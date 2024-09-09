@@ -1,0 +1,13 @@
+[Unit]
+Description=AquesTalk Server
+
+[Service]
+Type=simple
+WorkingDirectory=/home/icaredx/VOSKServer
+ExecStart=/home/icaredx/VOSKServer/start_tts_server.sh
+Restart=always
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

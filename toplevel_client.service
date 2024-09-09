@@ -1,0 +1,11 @@
+[Unit]
+Description=Top Level Client
+After=sound.target asr_server.service llm_server.service aques_server.service
+
+[Service]
+Type=simple
+WorkingDirectory=/home/icaredx/VOSKServer
+ExecStart=/home/icaredx/VOSKServer/start_toplevel_client.sh
+Restart=always
+StandardOutput=journal
+StandardError=journal
