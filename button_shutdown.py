@@ -3,6 +3,7 @@ from subprocess import check_call
 from signal import pause
 
 def shutdown():
+    print("power off")
     check_call(['sudo', 'poweroff'])
 
 shutdown_btn = Button(23, hold_time=5)
